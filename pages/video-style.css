@@ -1,9 +1,14 @@
 .video-container {
     width: 90vw;
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 5px;
+}
+iframe {
+    width: 30vw;
+    height: 25vh;
 }
 
 .last-el {
