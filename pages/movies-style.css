@@ -20,7 +20,7 @@ main {
     padding: 5%;
     gap: 2%;
     width: 100%;
-    height: 421vh;
+    height: 700vh;
 }
 
 .movie-card {
@@ -114,6 +114,6 @@ i {
     }
 
     .mc-info {
-        height: 25vh;
+        height: 15vh;
     }
 }
