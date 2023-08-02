@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./contact-us-style.css">
     <script src="https://kit.fontawesome.com/9630cfcb36.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,13 +22,27 @@
     </header>
     <main>
         <section>
-            <div>
-                <img src="" alt="">
-            </div>
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <form action="#" method="POST" id="contactForm">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required placeholder="Your Name">
+            
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required placeholder="example@email.com">
+            
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" required placeholder="Whats on your mind today?"></textarea>
+            
+                  <button type="submit">Send</button>
+                </form>
+              </div>
         </section>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52809.68308539495!2d-118.32521109999999!3d34.18201045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c295152818c595%3A0x307791af901f8ad4!2sBurbank%2C%20CA%2C%20USA!5e0!3m2!1sen!2sil!4v1691008501763!5m2!1sen!2sil" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
-        <nav>
+        <nav class="social-nav">
             <a href=""><i class="fa-brands fa-facebook fa-xl" style="color: #2852de;"></i></a>
             <a href=""><i class="fa-brands fa-github fa-xl" style="color: #560ccd;"></i></a>
             <a href=""><i class="fa-brands fa-linkedin fa-xl" style="color: #3a88fe;"></i></a>
