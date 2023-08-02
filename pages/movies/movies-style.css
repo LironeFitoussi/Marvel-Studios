@@ -1,14 +1,106 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180vh;
+}
+.main-title {
+    text-align: center;
+    color: #fff;
+    margin-top: 5vh;
+    font-size: 52px;
+}
+
 .movies-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
     justify-items: center;
     padding: 5%;
+    gap: 2%;
+    height: 577vh;
+    width: 165vh;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff1e1eb9;
+    padding: 5%;
+    border-radius: 25px;
+    width: 25vw;
 }
 
 .movie-card > h1 {
+    display: flex;
+    align-items: center;
     color: #fff;
+    font-size: 32px;
     text-align: center;
+    margin: 2vh;
+    height: 9vh;
 }
 
-.movie
+.movie-card > img {
+    height: 70%;
+    width: 100%;
+}
+.mc-info {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 70%;
+    border-radius: 25px;
+    gap: 5%;
+    height: 10vh;
+    align-items: center;
+}
+
+.mc-info > a {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.imdb-note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 8vh;
+    justify-content: center;
+}
+
+.imdb-note > div {
+    display: flex;
+    height: 3.5vh;
+    align-items: flex-end;
+}
+
+i {
+    height: 2vh;
+}
+.imdb-note > p > span {
+    font-weight: 700;
+}
+
+.lst-crd {
+    grid-column-end: 3;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .movies-container {
+        display: flex;
+        flex-direction: column;
+        width: 65vw;
+    }
+
+    .movie-card {
+        width: 60vw;
+    }
+
+}
