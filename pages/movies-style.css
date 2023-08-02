@@ -105,7 +105,7 @@ i {
     }
 
     .movie-card > h1 {
-        height: 24vh;
+        height: fit-content;
         width: 105%;
     }
 
