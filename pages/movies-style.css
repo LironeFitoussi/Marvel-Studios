@@ -101,7 +101,7 @@ i {
 
     .movie-card {
         width: 60vw;
-        height: 60vh;
+        height: 95vh;
     }
 
     .movie-card > h1 {
@@ -114,6 +114,6 @@ i {
     }
 
     .mc-info {
-        height: 15vh;
+        height: 25vh;
     }
 }
