@@ -1,14 +1,23 @@
 .video-container {
+    width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
 
+.last-el {
+    grid-column-start: 2;
+}
 
 
 @media screen and (max-width: 450px) {
     .video-container {
         display: flex;
         flex-direction: column;
+    }
+
+    iframe {
+        width: 90vw;
     }
 }

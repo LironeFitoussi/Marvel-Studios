@@ -51,8 +51,10 @@ nav.social-nav {
 }
 
 @media screen and (max-width: 600px) {
+
     .header-nav {
         flex-direction: column;
+        align-items: center;
     }
 
     .logo-link {
