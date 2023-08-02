@@ -88,10 +88,6 @@ i {
     font-weight: 700;
 }
 
-.lst-crd {
-    grid-column-end: 3;
-}
-
 
 @media screen and (max-width: 425px) {
     
