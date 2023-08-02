@@ -45,8 +45,9 @@ a > img {
 
 
 nav.social-nav {
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
+    width: 50vw;
 }
 
 @media screen and (max-width: 600px) {
