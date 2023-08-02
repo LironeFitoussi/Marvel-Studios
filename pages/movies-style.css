@@ -101,7 +101,7 @@ i {
 
     .movie-card {
         width: 60vw;
-        height: 95vh;
+        height: fit-content;
     }
 
     .movie-card > h1 {
