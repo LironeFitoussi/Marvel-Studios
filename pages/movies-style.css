@@ -3,7 +3,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 90%;
-    height: ;
+    height: fit-content;
 }
 .main-title {
     text-align: center;
@@ -16,22 +16,20 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    align-items: center;
     justify-items: center;
-    padding: 5%;
+    justify-content: center;
     gap: 5%;
-    width: fit-content;
-    height: fit-content;
+    width: 90vw;
+    height: 350vh;
 }
 
 .movie-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #ff1e1eb9;
     padding: 5%;
+    background-color: #ff1e1eb9;
     border-radius: 25px;
     width: fit-content;
     height: fit-content;
@@ -49,8 +47,8 @@ main {
 }
 
 .movie-card > img {
-    height: 55vh;
-    width: 30vh;
+    height: 43vh;
+    width: 28vh;
 }
 
 .mc-info {
@@ -69,6 +67,10 @@ main {
     font-weight: 700;
 }
 
+
+footer {
+    height: 10vh;
+}
 .imdb-note {
     display: flex;
     flex-direction: column;
