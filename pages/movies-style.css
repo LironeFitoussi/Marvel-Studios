@@ -117,3 +117,12 @@ i {
         height: 15vh;
     }
 }
+
+@media screen and (min-width: 1600px) {
+    .movie-card {
+        height: 100vh
+    }
+    
+    .movies-container {
+        height: 450vh;
+    }
