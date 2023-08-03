@@ -44,6 +44,20 @@ a > img {
     height: 100%;
 }
 
+main {
+    position: relative;
+}
+
+i.fa-arrow-left {
+    position: absolute;
+    left: 5vw;
+    top: 10vh;
+}
+
+i.fa-arrow-right {
+    
+}
+
 .comics-header {
     display: flex;
     flex-direction: column;
@@ -51,21 +65,43 @@ a > img {
     align-items: center;
     width: 100vw;
     height: 80vh;
-    overflow: hidden;
     background-color: crimson;
 }
 
+.com-cont {
+    width: 60vw;
+    overflow: hidden;
+}
+
 .comics-header > h1 {
+    position: relative;
     text-align: center;
     margin: 10vh 0 ;
     font-size: 34px;
 }
+
 .comics-slider {
     display: flex;
+    position: relative;
     gap: 20px;
     width: 70vw;
     height: fit-content;
-    overflow: scroll;
+    animation: scrolling 10s infinite alternate;
+}
+.comics-slider:hover {
+    animation-play-state: initial;
+}
+
+
+
+
+@keyframes scrolling {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-60vw);
+    }
 }
 
 .comics-slider > img {
@@ -100,5 +136,7 @@ nav.social-nav {
         background-color: rgb(184, 11, 11);
     }
     
-    
+    .comics-slider > img {
+        height: 30vh;
+    }
 }
