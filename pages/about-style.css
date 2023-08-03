@@ -15,7 +15,7 @@ div {
     padding: 5% 0;
 }
 
-.welcome-header {
+.welcome-header, .finde-header {
     grid-column-start: 1;
     grid-column-end: 3;
 }
