@@ -53,15 +53,7 @@ main {
     position: relative;
 }
 
-i.fa-arrow-left {
-    position: absolute;
-    left: 5vw;
-    top: 10vh;
-}
 
-i.fa-arrow-right {
-    
-}
 
 .comics-header {
     display: flex;
@@ -91,15 +83,28 @@ i.fa-arrow-right {
     gap: 20px;
     width: 70vw;
     height: fit-content;
-    animation: scrolling 10s infinite alternate;
-}
-.comics-slider:hover {
-    animation-play-state: initial;
 }
 
+i.fa-arrow-left {
+    cursor: pointer;
+    position: absolute;
+    left: 15vw;
+    top: 50vh;
+}
 
-footer {
-    height: fit-content;
+i.fa-arrow-right {
+    cursor: pointer;
+    position: absolute;
+    right: 15vw;
+    top: 50vh;
+}
+
+i.fa-arrow-right:hover ~ .com-cont > .comics-slider {
+    animation: scrolling 10s ;
+}
+
+i.fa-arrow-left:hover + .com-cont > .comics-slider {
+    animation: scrolling 10s reverse;
 }
 
 @keyframes scrolling {
@@ -107,7 +112,7 @@ footer {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-60vw);
+        transform: translateX(-250vw);
     }
 }
 
@@ -115,11 +120,18 @@ footer {
     height: 50vh;
 }
 
+/* Footer */
+
+footer {
+    height: fit-content;
+}
+
 nav.social-nav {
     justify-content: space-around;
     display: flex;
     width: 50vw;
 }
+
 
 @media screen and (max-width: 600px) {
 
