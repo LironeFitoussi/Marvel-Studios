@@ -1,10 +1,27 @@
 main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 5%;
     color: #fff;
     text-align: center;
+    align-items: center;
+}
 
+main > img {
+    width: 100%;
 }
 
 div {
     padding: 5% 0;
+}
+
+.welcome-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.mission-header {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
 }
