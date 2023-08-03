@@ -19,8 +19,8 @@ main {
     align-items: center;
     justify-items: center;
     padding: 5%;
-    gap: 2%;
-    width: 100%;
+    gap: 5%;
+    width: fit-content;
     height: fit-content;
 }
 
@@ -50,7 +50,7 @@ main {
 
 .movie-card > img {
     height: 55vh;
-    width: 40vh;
+    width: 30vh;
 }
 
 .mc-info {
