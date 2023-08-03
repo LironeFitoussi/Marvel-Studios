@@ -7,7 +7,8 @@ body {
     justify-content: center;
 }
 
-p, h1 {
+p, h1, h2{
+    color: #fff;
     margin: 0;
 }
 nav.header-nav {
@@ -32,7 +33,7 @@ nav > a, .navpg-lnk {
 nav.header-nav > a:hover {
     font-weight: 700;
    
-    background-color: rgb(184, 11, 11);
+    background-color: crimson;
 }
 a {
     text-decoration: none;
@@ -43,6 +44,33 @@ a > img {
     height: 100%;
 }
 
+.comics-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    background-color: crimson;
+}
+
+.comics-header > h1 {
+    text-align: center;
+    margin: 10vh 0 ;
+    font-size: 34px;
+}
+.comics-slider {
+    display: flex;
+    gap: 20px;
+    width: 70vw;
+    height: fit-content;
+    overflow: scroll;
+}
+
+.comics-slider > img {
+    height: 50vh;
+}
 
 nav.social-nav {
     justify-content: space-around;
