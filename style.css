@@ -265,7 +265,7 @@ nav.social-nav {
         background-color: #ff1e1eb9;
         width: 10vw;
         height: 5vh;
-        padding: 10%;
+        padding: 50%;
     }
     .nav-btn:hover > .header-nav {
         display: flex!important;
