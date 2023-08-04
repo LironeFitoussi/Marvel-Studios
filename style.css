@@ -300,14 +300,16 @@ nav.social-nav {
         width: 100%;
     }
 
-    .nav-btn:hover > i.fa-solid{
+    .nav-btn:hover > img.fa-solid{
         transform: rotateZ(90deg);
+        width: 5vh;
     }
 
     .nav-btn:hover{
         padding: 0;
         align-items:flex-start;
         width: 60vw;
+        height: fit-content!important;
     }
 
     .header-nav {
