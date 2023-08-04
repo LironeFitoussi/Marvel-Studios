@@ -300,9 +300,9 @@ nav.social-nav {
         width: 100%;
     }
 
-    .nav-btn:hover > img.fa-solid{
+    .nav-btn:hover > svg {
         transform: rotateZ(90deg);
-        width: 5vh;
+        width: 5vw;
     }
 
     .nav-btn:hover{
