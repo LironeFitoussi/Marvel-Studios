@@ -49,6 +49,7 @@ main {
 .movie-card > img {
     height: 43vh;
     width: 28vh;
+    box-shadow: 5px 5px 10px 2px #000;
 }
 
 .mc-info {
@@ -96,33 +97,5 @@ i {
 
 @media screen and (max-width: 425px) {
     
-    .movies-container {
-        display: flex;
-        flex-direction: column;
-        width: 65vw;
-        height: fit-content;
-        gap: 30px;
-    }
-
-    .movie-card {
-        width: 85vw;
-        height: fit-content;
-    }
-
-    .movie-card > h1 {
-        height: fit-content;
-        width: 105%;
-    }
-
-    .movie-card > img { 
-        width: 80%;
-    }
-
-    .mc-info {
-        height: 15vh;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    
+   
 }
