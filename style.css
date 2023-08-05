@@ -315,6 +315,24 @@ nav.social-nav {
     width: 50vw;
 }
 
+
+/* accessibility */
+
+.accessibility {
+    cursor: pointer;
+    background-color: #0096FF;
+    position: fixed;
+    bottom: 5vh;
+    left: -20px;
+    padding: 1vh;
+    border-radius: 50px;
+    display: flex;
+    width: 6vh;
+    height: fit-content;
+    border: 2px solid #fFF;
+    justify-content: flex-end;
+}
+
 /* Media */
 @media screen and (min-width: 1440px) {
     .header-nav > a {
