@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
 
-p, h1, h2{
+p, h1, h2, h3{
     color: #fff;
     margin: 0;
 }
@@ -195,6 +195,50 @@ i.fa-arrow-left:hover + .com-cont > .comics-slider {
 
 /* Up coming Movies */
 
+.movie > h3 , .movie > p {
+    color: #fff;
+}
+
+.upcoming-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.movie > iframe {
+    width: 80vw;
+    height: 70vh;
+}
+
+.latest-comics {
+    background-color: #fff;
+}
+
+.latest-comics > h2, h3, p {
+    color: #000;
+}
+
+.comic > img {
+    box-shadow: rgba(0, 0, 0, 0.25) -11px 7px 20px 6px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateY(0vh);
+    transition: transform 0.2s;
+}
+
+.comic > img:hover {
+    cursor: pointer;
+    transform: translateY(-2vh);
+}
 .upcoming-movies, .latest-comics, .about-marvel {
     padding: 10vh 0;
     text-align: center;
@@ -330,10 +374,6 @@ nav.social-nav {
         background-color: #ff1e1eb9;
     }
 
-    .header-nav {
-        
-    }
-
     .header-nav > a {
         padding: 0 5%;
         width: 90%;
@@ -371,5 +411,9 @@ nav.social-nav {
     
     .comics-slider > img {
         height: 30vh;
+    }
+
+    .movie > iframe {
+        height: 20vh;
     }
 }
