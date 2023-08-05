@@ -315,7 +315,8 @@ nav.social-nav {
     justify-content: space-around;
     display: flex;
     width: 100vw;
-    align-items: flex-end;
+    align-items: center;
+
 }
 
 
@@ -333,7 +334,6 @@ nav.social-nav {
     width: 6vh;
     height: fit-content;
     border: 2px solid #fFF;
-    justify-content: flex-end;
 }
 
 /* Media */
