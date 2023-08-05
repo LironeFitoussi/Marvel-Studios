@@ -81,8 +81,18 @@
             </section>
         </footer>
 
-        <button class="accessibility">
+        <div id="accessibility">
             <i class="fa-solid fa-wheelchair" style="color: #ffffff;"></i>
-        </button>
+        </div>
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const accessibilityElement = document.querySelector("#accessibility");
+        
+        accessibilityElement.addEventListener("click", function() {
+            alert("The accessibility on the site is not set yet.");
+        });
+    });
+</script>
 </html>

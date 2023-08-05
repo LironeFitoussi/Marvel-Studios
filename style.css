@@ -318,7 +318,7 @@ nav.social-nav {
 
 /* accessibility */
 
-.accessibility {
+#accessibility {
     cursor: pointer;
     background-color: #0096FF;
     position: fixed;

@@ -182,8 +182,18 @@
         </section>
     </footer>
 
-    <button class="accessibility">
+    <div id="accessibility">
         <i class="fa-solid fa-wheelchair" style="color: #ffffff;"></i>
-    </button>
+    </div>
 </body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const accessibilityElement = document.querySelector("#accessibility");
+    
+    accessibilityElement.addEventListener("click", function() {
+        alert("We apologize for the inconvenience due to the current lack of accessibility on our website. We are actively working to improve accessibility to ensure a better experience for everyone in the future. Thank you for your understanding");
+    });
+});
+</script>
 </html>
