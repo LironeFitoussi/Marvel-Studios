@@ -38,6 +38,10 @@ header {
     margin-top: 8px;
 }
 
+.header-logo {
+    width: 20vw;
+}
+
 .header-nav > a {
     height: 10vh;
 }
@@ -234,9 +238,8 @@ nav.social-nav {
     background-color: aliceblue
 }
 
-.fa-solid, .fa-bars {
-    margin: 5%;
-    display: none!important;
+.header-mobile-logo {
+    display: none;
 }
 
 .header-nav {
@@ -266,35 +269,39 @@ nav.social-nav {
 @media screen and (max-width: 425px){
     
     /* Navigation Menu - Mobile*/
-    .fa-solid {
-        display: flex!important;
-        width: 100%;
-        height: fit-content;
-        transition: transform 0.1s;
+    .header-mobile-logo {
+        display: flex;
+        background-image: url(./Resources/Images/marvel-m-logo.png);
+        height: 10vh;
+        width: 36vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .nav-btn {
-        background-color: #ff1e1eb9;
-        width: 5vw;
-        height: 3vh;
-        padding: 3%;
+        background-color: transparent;
+        width: fit-content;
+        height: fit-content;
+        padding: 0;
     }
+
     .nav-btn:hover > .header-nav {
         display: flex!important;
         width: 100%;
     }
 
-    .nav-btn:hover > svg {
-        transform: rotateZ(90deg);
-        width: 5vw;
+    .nav-btn:hover > .header-mobile-logo {
+        background-image: url(./Resources/Images/Marvel_Logo.svg.png);
+
     }
 
     .nav-btn:hover{
         padding: 0;
-        align-items:flex-start;
         width: 100%;
         height: fit-content;
         border-radius: 0;
+        background-color: #ff1e1eb9;
     }
 
     .header-nav {
@@ -325,6 +332,11 @@ nav.social-nav {
         align-items: center;
         position: relative;
     }
+
+    .header-logo {
+       display: none;
+    }
+
     .btn-cont {
         display: flex;
         position: absolute;

@@ -29,3 +29,9 @@
 .mc-info > a {
     font-size: 18px;
 }
+
+@media screen and (max-width: 425px) {
+       .header-mobile-logo {
+            background-image: url(../Resources/Images/marvel-m-logo.png);
+    }
+}
