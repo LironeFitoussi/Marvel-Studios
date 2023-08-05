@@ -327,13 +327,14 @@ nav.social-nav {
     background-color: #0096FF;
     position: fixed;
     bottom: 5vh;
-    left: -20px;
+    left: -30px;
     padding: 1vh;
     border-radius: 50px;
     display: flex;
-    width: 6vh;
+    width: 4vh;
     height: fit-content;
     border: 2px solid #fFF;
+    justify-content: flex-end;
 }
 
 /* Media */
