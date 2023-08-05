@@ -256,7 +256,7 @@ nav.social-nav {
     height: 100%;
     padding: 0 5%;
     align-items: center;
-    color: #ff1e1eb9;
+    color: #bb0000;
     text-decoration: none;
     justify-content: center;
  }
@@ -264,7 +264,7 @@ nav.social-nav {
  .header-nav > a:hover {
     font-weight: bold;
     color: aliceblue;
-    background-color: #ff1e1eb9;
+    background-color: #bb0000;
  }
 
 @media screen and (max-width: 425px){
@@ -317,11 +317,6 @@ nav.social-nav {
         width: 90%;
         align-items: center;
         font-size: 24px;
-    }
-
-    .header-nav > a:hover {
-        color: aliceblue;
-        background-color: #ff1e1eb9;
     }
 }
 
