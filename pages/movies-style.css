@@ -68,10 +68,6 @@ main {
     font-weight: 700;
 }
 
-
-footer {
-    height: 10vh;
-}
 .imdb-note {
     display: flex;
     flex-direction: column;
