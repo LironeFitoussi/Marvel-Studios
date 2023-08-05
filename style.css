@@ -32,21 +32,56 @@ a {
 /* Naigation Bar  */
 header {
     display: flex;
+    gap: 2vh;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 8px;
+    margin: 2vh 0;
 }
 
 .header-logo {
     width: 20vw;
 }
 
-.header-nav > a {
+.nav-btn {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
     height: 10vh;
+    align-items: center;
+    width: 50vw;
+    border-radius: 2vw;
+    padding: 0 5%;
+    background-color: aliceblue
 }
-.header-nav > a > img {
-    max-height: 10vh;
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.header-nav > a {
+    display: flex;
+    height: 100%;
+    padding: 0 5%;
+    align-items: center;
+    color: #bb0000;
+    text-decoration: none;
+    justify-content: center;
+ }
+
+ .header-nav > a:hover {
+    font-weight: bold;
+    color: aliceblue;
+    background-color: #bb0000;
+ }
+
+ .header-mobile-logo {
+    display: none;
 }
 
 /* Main */
@@ -225,51 +260,18 @@ nav.social-nav {
     width: 50vw;
 }
 
-/* New Nav */
-.nav-btn {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    justify-content: center;
-    height: 10vh;
-    align-items: center;
-    width: 50vw;
-    border-radius: 2vw;
-    padding: 0 5%;
-    background-color: aliceblue
-}
+/* Media */
+@media screen and (max-width: 425px) {
 
-.header-mobile-logo {
-    display: none;
-}
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        display: none!important;
+        width: 100%;
+        background-color: aliceblue;
+    }
 
-.header-nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    justify-content: space-around;
-}
-
-.header-nav > a {
-    display: flex;
-    height: 100%;
-    padding: 0 5%;
-    align-items: center;
-    color: #bb0000;
-    text-decoration: none;
-    justify-content: center;
- }
-
- .header-nav > a:hover {
-    font-weight: bold;
-    color: aliceblue;
-    background-color: #bb0000;
- }
-
-@media screen and (max-width: 425px){
-    
-    /* Navigation Menu - Mobile*/
     .header-mobile-logo {
         display: flex;
         background-image: url(./Resources/Images/marvel-m-logo.png);
@@ -306,10 +308,7 @@ nav.social-nav {
     }
 
     .header-nav {
-        display: none!important;
-        flex-direction: column;
-        width: 100%;
-        background-color: aliceblue;
+        
     }
 
     .header-nav > a {
@@ -318,20 +317,11 @@ nav.social-nav {
         align-items: center;
         font-size: 24px;
     }
-}
-
-/* Media */
-@media screen and (max-width: 425px) {
-
-    .header-nav {
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    }
 
     .header-logo {
        display: none;
     }
+
 
     .btn-cont {
         display: flex;
