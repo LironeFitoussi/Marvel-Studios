@@ -16,7 +16,7 @@ body {
 }
 
 p, h1, h2, h3{
-    color: #fff;
+    color: #fff!important;
     margin: 0;
 }
 
@@ -310,9 +310,12 @@ footer {
 }
 
 nav.social-nav {
+    background-color: #000;
+    height: 6vh;
     justify-content: space-around;
     display: flex;
-    width: 50vw;
+    width: 100vw;
+    align-items: flex-end;
 }
 
 
