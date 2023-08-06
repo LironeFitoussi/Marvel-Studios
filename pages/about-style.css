@@ -1,5 +1,6 @@
 main {
     display: grid;
+    gap: 3vw;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 5%;
     color: #fff;
@@ -11,17 +12,68 @@ main > img {
     width: 100%;
 }
 
+main > * > * {
+    color: #fff;
+}
+
 div {
     padding: 5% 0;
 }
 
-.welcome-header, .finde-header {
+.welcome-header, .find-header, .contact-header {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-.mission-header {
+.mission-header, .involved-header {
     grid-column-start: 2;
     grid-column-end: 4;
 
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-header {
+        order: 0;
+    }
+
+    .wh-img {
+        order: 1;
+    }
+
+    .mission-header {
+        order: 2;
+    }
+
+    .mh-img {
+        order: 3;
+    }
+
+    .find-header {
+        order: 4;
+    }
+
+    .fh-img {
+        order: 5;
+    }
+
+    .involved-header {
+        order: 6;
+    }
+
+    .ih-img {
+        order: 7;
+    }
+
+    .contact-header {
+        order: 8;
+    }
+
+    .ch-img {
+        order: 9;
+    }
 }
