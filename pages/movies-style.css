@@ -96,6 +96,10 @@ i {
     font-weight: 700;
 }
 
+nav.social-nav {
+    align-items: flex-end;
+}
+
 @media screen and (max-width: 1024px) {
     .movie-card > h1 {
         font-size: 3vh;
