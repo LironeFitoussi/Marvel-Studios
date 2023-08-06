@@ -318,7 +318,7 @@ nav.social-nav {
     justify-content: space-around;
     display: flex;
     width: 100vw;
-    align-items: flex-end;
+    align-items: center;
 }
 
 
