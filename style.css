@@ -176,11 +176,11 @@ i.fa-arrow-right {
 }
 
 i.fa-arrow-right:hover ~ .com-cont > .comics-slider {
-    animation: scrolling 10s ;
+    animation: scrolling 10s linear;
 }
 
 i.fa-arrow-left:hover + .com-cont > .comics-slider {
-    animation: scrolling 10s reverse;
+    animation: scrolling 10s linear reverse;
 }
 
 @keyframes scrolling {
@@ -341,18 +341,86 @@ nav.social-nav {
 }
 
 /* Media */
+
+@media screen and (max-width: 1600px) {
+    @keyframes scrolling {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100vw);
+        }
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .header-nav > a {
         font-size: 28px;
     }
     
+     @keyframes scrolling {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-120vw);
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    @keyframes scrolling {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-140vw);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    i.fa-arrow-left {
+        cursor: pointer;
+        position: absolute;
+        left: 15vw;
+        top: 40vh;
+    }
+
+    i.fa-arrow-right {
+        cursor: pointer;
+        position: absolute;
+        right: 15vw;
+        top: 40vh;
+    }
+    .comics-slider > img {
+        height: 30vh;
+    }
+    @keyframes scrolling {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100vw);
+        }
+    }
 }
 
 @media screen and  (max-width: 800px){
     .header-nav > a {
         font-size: 16px;
     }
+
+    @keyframes scrolling {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-160vw);
+        }
+    }
 }
+
 @media screen and (max-width: 425px) {
 
     .header-nav {
@@ -434,11 +502,39 @@ nav.social-nav {
         background-color: rgb(184, 11, 11);
     }
     
+    .comics-header {
+        height: 55vh;
+    }
+
+    i.fa-arrow-left {
+        cursor: pointer;
+        position: absolute;
+        left: 15vw;
+        top: 35vh;
+    }
+
+    i.fa-arrow-right {
+        cursor: pointer;
+        position: absolute;
+        right: 15vw;
+        top: 35vh;
+    }
+
     .comics-slider > img {
-        height: 30vh;
+        height: 20vh;
     }
 
     .movie > iframe {
         height: 20vh;
     }
+
+    @keyframes scrolling {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-205vw);
+        }
+    }
 }
+
