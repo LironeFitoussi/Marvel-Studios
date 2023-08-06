@@ -538,3 +538,27 @@ nav.social-nav {
     }
 }
 
+@media screen and (max-width: 360px) {
+    .comics-header {
+        height: 45vh;
+    }
+
+    .comics-header > h1 {
+        margin: 5vh 0 ;
+    }
+
+    i.fa-arrow-left {
+        cursor: pointer;
+        position: absolute;
+        left: 15vw;
+        top: 30vh;
+    }
+
+    i.fa-arrow-right {
+        cursor: pointer;
+        position: absolute;
+        right: 15vw;
+        top: 30vh;
+    }
+}
+
