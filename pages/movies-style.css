@@ -86,6 +86,17 @@ main {
 i {
     height: 3vh;
 }
+
+.imdb-note > p {
+    color: #fff;
+}
+
 .imdb-note > p > span {
     font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    .movie-card > h1 {
+        font-size: 3vh;
+    }
 }

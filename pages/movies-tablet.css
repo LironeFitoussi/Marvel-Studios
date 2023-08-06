@@ -1,0 +1,32 @@
+.nav-btn {
+    width: 60vw;
+}
+
+.movies-container {
+    height: 275vh;
+}
+
+.movie-card {
+    width: 25vw;
+}
+
+.movie-card > img {
+    height: 90%;
+    width: 90%;
+    box-shadow: 5px 5px 10px 2px #000;
+}
+
+.movie-card > h1 {
+    font-size: 4vw;
+    height: 13vh;
+    width: 22vw;
+}
+
+.mc-info {
+    height: 10vh;
+    flex-direction: column;
+}
+
+.mc-info > a {
+    font-size: 2vh;
+}
