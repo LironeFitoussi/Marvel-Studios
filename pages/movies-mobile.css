@@ -15,6 +15,7 @@
 .movie-card > h1 {
     height: fit-content;
     width: 90%;
+    font-size: 7vw;
 }
 
 .movie-card > img { 
