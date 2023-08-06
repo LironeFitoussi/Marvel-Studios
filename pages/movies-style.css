@@ -49,6 +49,7 @@ main {
 .movie-card > img {
     height: 43vh;
     width: 28vh;
+    border-radius: 25px;
     box-shadow: 5px 5px 10px 2px #000;
 }
 

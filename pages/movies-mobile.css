@@ -18,11 +18,12 @@
 }
 
 .movie-card > img { 
-    width: 60%;
+    width: 90%;
 }
 
 .mc-info {
     height: 15vh;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
