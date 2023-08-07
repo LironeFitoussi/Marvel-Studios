@@ -4,6 +4,7 @@ main {
     align-items: center;
     width: 90%;
     height: fit-content;
+    margin-bottom: 8px;
 }
 .main-title {
     text-align: center;
